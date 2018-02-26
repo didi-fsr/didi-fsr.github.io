@@ -34,7 +34,7 @@
 
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -44,7 +44,10 @@
         </button>
         <a class="navbar-brand" href="#"></a>
       </div>
-
+      <div class="jumbotron">
+        <h1>Agenda Kegiatah Hari ini</h1>
+        <label for=""></label>
+      </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
@@ -65,9 +68,9 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <div class="container">
+  <div class="container" role="main">
     <div class="row">
-      <div class="col-md-6 col">
+      <div class="col-lg-8 col-lg-offset-2">
         <form class="" action="show.agenda" method="post">
           <div class="form-group">
             <label class="control-label " for="date">
@@ -104,6 +107,20 @@
     </div>
 
   </div>
+
+  {{-- Date Picker --}}
+	<script>
+	    $(document).ready(function(){
+	        var date_input=$('input[id="date"]'); //our date input has the name "date"
+	        var container=$('form form-group').length>0 ? $('form form-group').parent() : "body";
+	        date_input.datepicker({
+	            format: 'yyyy-mm-dd',
+	            container: container,
+	            todayHighlight: true,
+	            autoclose: true,
+	        })
+	    })
+	</script>
 </body>
 
 </html>
