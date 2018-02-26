@@ -40,7 +40,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- Include Date Range Picker -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script> -->
 
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-bottom: 10">
     <div class="container">
@@ -127,7 +127,7 @@
     } );
   </script>
 
-	<script>
+	<!-- <script>
 	    $(document).ready(function(){
 	        var date_input=$('input[id="date"]'); //our date input has the name "date"
 	        var container=$('form form-group').length>0 ? $('form form-group').parent() : "body";
@@ -138,7 +138,7 @@
 	            autoclose: true,
 	        })
 	    })
-	</script>
+	</script> -->
 </body>
 
 </html>
