@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
-	<link href="http://demo.expertphp.in/css/jquery.ui.autocomplete.css" rel="stylesheet">
+	<!-- <link href="http://demo.expertphp.in/css/jquery.ui.autocomplete.css" rel="stylesheet"> -->
 
 	<!--Font Awesome (added because you use icons in your prepend/append)-->
 	<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" /> --}}
@@ -26,17 +26,19 @@
   <!-- Include Date Range Picker -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css"> -->
+	<link rel="stylesheet/less" href="timepicker.less" />
 
 </head>
 
 <body>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
   <!-- <script src="http://demo.expertphp.in/js/jquery-ui.min.js"></script>
   <script src="http://demo.expertphp.in/js/jquery.js"></script> -->
   <!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap-timepicker.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- Include Date Range Picker -->
@@ -88,7 +90,7 @@
               <i class="fa fa-calendar">
               </i>
              </div>
-             <input class="form-control" id="datepicker" name="tgl_lahir" placeholder="yyyy-mm-dd" type="text" autocomplete="off"/>
+             <input class="form-control" id="date" name="tgl_lahir" placeholder="yyyy-mm-dd" type="text" autocomplete="off"/>
              <button type="submit" class="btn-default" >Submit</button>
             </div>
           </div>
@@ -121,13 +123,13 @@
 
   </div>
 
-  <script>
+  <!-- <script>
     $( function() {
       $( "#datepicker" ).datepicker();
     } );
-  </script>
+  </script> -->
 
-	<!-- <script>
+	<script>
 	    $(document).ready(function(){
 	        var date_input=$('input[id="date"]'); //our date input has the name "date"
 	        var container=$('form form-group').length>0 ? $('form form-group').parent() : "body";
@@ -138,7 +140,7 @@
 	            autoclose: true,
 	        })
 	    })
-	</script> -->
+	</script>
 </body>
 
 </html>
