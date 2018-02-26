@@ -24,14 +24,18 @@
 	<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" /> --}}
 
   <!-- Include Date Range Picker -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 
 </head>
 
 <body>
-  <script src="http://demo.expertphp.in/js/jquery-ui.min.js"></script>
-  <script src="http://demo.expertphp.in/js/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="http://demo.expertphp.in/js/jquery-ui.min.js"></script>
+  <script src="http://demo.expertphp.in/js/jquery.js"></script> -->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -84,8 +88,8 @@
               <i class="fa fa-calendar">
               </i>
              </div>
-             <input class="form-control" id="date" name="tgl_lahir" placeholder="yyyy-mm-dd" type="text" autocomplete="off"/>
-             <button type="submit" class="input-group-btn">Submit</button>
+             <input class="form-control" id="datepicker" name="tgl_lahir" placeholder="yyyy-mm-dd" type="text" autocomplete="off"/>
+             <button type="submit" class="btn-default" >Submit</button>
             </div>
           </div>
         </form>
@@ -117,6 +121,11 @@
 
   </div>
 
+  <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+  </script>
 
 	<script>
 	    $(document).ready(function(){
